@@ -1,11 +1,12 @@
 from typing import Dict, List, Any
 from src.validate import validate_non_empty_string, validate_positive_integer
+from src.file import load_data, save_data
 
-# In-memory storage for Módulo 1
-records: List[Dict[str, Any]] = []
+# In-memory storage for Módulo 1 & 2
+records: List[Dict[str, Any]] = load_data()
 
 # Set for unique IDs
-existing_ids = set()
+existing_ids = {str(r["id"]) for r in records if "id" in r}
 
 def create_record(record_id: str, name: str, age: str) -> bool:
     """Creates a new record after validating inputs and ensuring ID uniqueness."""
@@ -37,6 +38,10 @@ def create_record(record_id: str, name: str, age: str) -> bool:
     
     records.append(record)
     existing_ids.add(record_id)
+    
+    # Save to file
+    save_data(records)
+    
     print(f"Éxito: Registro {record_id} creado.")
     return True
 

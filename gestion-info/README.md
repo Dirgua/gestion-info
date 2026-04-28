@@ -55,3 +55,52 @@ Por ahora, al correr el programa, la pantalla te mostrará una prueba automátic
 3. **Muestra una lista:** Al terminar, imprimirá en la pantalla la lista de todos los registros que se guardaron con éxito.
 
 ¡En futuras actualizaciones este sistema tendrá menús interactivos donde tú mismo podrás escribir, guardar y borrar la información!
+
+---
+
+## 🗂️ Historial de Módulos
+
+### MÓDULO 1 — Estructura de datos y validaciones base
+
+**Objetivo:** Definir la estructura del registro y almacenar datos en memoria.
+
+**Requisitos que se cumplen aquí:**
+- Listas y diccionarios
+- Sets (para IDs únicos o correos únicos)
+- Validaciones de campos
+
+**Entregables:**
+- `validate.py` con funciones de validación
+- `service.py` con estructura inicial (sin archivos aún)
+- `main.py` crear datos y listar datos
+
+**Criterios de aceptación:**
+- Se pueden crear registros en memoria y listar.
+- No permite IDs duplicados (uso de set).
+
+*(Etiquetado en el repositorio como `m1-data`)*
+
+---
+
+### MÓDULO 2 — Persistencia en archivos (JSON recomendado)
+
+**Objetivo:** Guardar y cargar los registros desde un archivo.
+
+**Requisitos que se cumplen aquí:**
+- Manejo seguro de archivos
+- try-except para errores de lectura/escritura
+- Persistencia real (los datos quedan guardados)
+
+**Entregables:**
+- `file.py` con funciones:
+    - `load_data()`
+    - `save_data(data)`
+- Archivo dentro de `data/` (por ejemplo `records.json`)
+- Modificar `main.py` crear datos y listar datos en el archivo `.json`
+
+**Criterios de aceptación:**
+- Si el archivo no existe, el programa crea/arranca con lista vacía.
+- Si el archivo está dañado, muestra mensaje y no se cae.
+
+*(Etiquetado en el repositorio como `m2-files`)*
+

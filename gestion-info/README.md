@@ -104,3 +104,29 @@ Por ahora, al correr el programa, la pantalla te mostrará una prueba automátic
 
 *(Etiquetado en el repositorio como `m2-files`)*
 
+---
+
+### MÓDULO 3 — CRUD completo (lógica de negocio)
+
+**Objetivo:** Completar las funciones CRUD conectadas a la persistencia.
+
+**Requisitos que se cumplen aquí:**
+- CRUD completo
+- List comprehensions y lambda (mínimo 1 caso real)
+- Manejo de errores (ID no existe, campos inválidos, etc.)
+
+**Entregables:**
+- `service.py` con:
+    - `new_register()`
+    - `list_records()`
+    - `search_record()`
+    - `update_record()`
+    - `delete_record()`
+- Uso de **list comprehension** para búsquedas/filtrado
+- Uso de **lambda** para ordenar o buscar
+
+**Criterios de aceptación:**
+- CRUD funciona y se refleja en archivo.
+- Mensajes claros en consola ante errores.
+
+*(Etiquetado en el repositorio como `m3-crud`)*

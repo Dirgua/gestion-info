@@ -130,3 +130,24 @@ Por ahora, al correr el programa, la pantalla te mostrará una prueba automátic
 - Mensajes claros en consola ante errores.
 
 *(Etiquetado en el repositorio como `m3-crud`)*
+
+---
+
+### MÓDULO 4 — Menú interactivo en consola (UI)
+
+**Objetivo:** Crear el menú haciendo uso de colorama y conectar las opciones al CRUD.
+
+**Requisitos que se cumplen aquí:**
+- Menú interactivo
+- Validación de entradas (números, opciones, etc.)
+- Flujo completo: crear → guardar → listar → editar → eliminar
+
+**Entregables:**
+- `menu.py` con el menú y sus opciones
+- `main.py` llamando al menú
+
+**Criterios de aceptación:**
+- El menú se repite hasta seleccionar "Salir".
+- No se rompe si el usuario escribe letras en lugar de números (manejo con try-except).
+
+*(Etiquetado en el repositorio como `m4-menu`)*
